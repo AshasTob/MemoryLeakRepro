@@ -19,7 +19,6 @@ namespace MemoryLeak_AppInsights
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .UseApplicationInsights();
+                .UseStartup<Startup>();
     }
 }
